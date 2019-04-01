@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Atividade1;
+package Topico3_slide_6;
 
 /**
  *
@@ -11,13 +11,16 @@ package Atividade1;
  * 
  * 1. Implemente o exemplo anterior usando Lambda Expression.
  */
-public class ThreadLambda extends Thread {
+public class a1_ThreadLambda extends Thread {
     
-    public ThreadLambda(){
+    
+    public static void main(String[] args) {
         new Thread( ()->{
-            System.out.println("print dentro da thread");
+            System.out.println("Print dentro da thread");
         }
         ).start();
     }
+    
+    
     
 }
