@@ -19,9 +19,10 @@ import java.util.logging.Logger;
  */
 public class a3_ThreadSafety implements Runnable{
     
-    Contador cont = new Contador();
+    static Contador cont = new Contador();
     
      public static void main(String[] args) {
+         System.out.println("cont: "+a3_ThreadSafety.cont.getContador());
         Scanner scan = new Scanner(System.in);  // Create a Scanner object
         
         System.out.println("Digite a quantidade de Threads a serem criadas:");
