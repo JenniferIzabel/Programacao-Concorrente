@@ -43,7 +43,7 @@ public class a3_ThreadSafety implements Runnable{
      @Override
     public void run() {
         this.cont.incrementaContador();
-        System.out.println("Thread "+ this.cont.getContador());   
+        System.out.println("Count "+ this.cont.getContador());   
     }
 }
     
