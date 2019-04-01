@@ -9,7 +9,7 @@ package Topico3_slide_6;
  *
  * @author Jennifer
  * 
- * Contador para o exercio 3 (classe ThreadSafety)
+ * Contador para o exercio da classe a3_ThreadSafety
  */
 public class Contador {
     private int contador;

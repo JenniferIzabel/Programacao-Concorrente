@@ -36,12 +36,13 @@ public class a3_ThreadSafety implements Runnable{
     }
 
     private static void criadora() {
-        new Thread (new a2_NThreads()).start(); ;
+        new Thread (new a3_ThreadSafety()).start();
     }   
 
      @Override
     public void run() {
-        System.out.println("Print dentro da thread"+ this.cont.getContador());   
+        this.cont.incrementaContador();
+        System.out.println("Thread "+ this.cont.getContador());   
     }
 }
     
