@@ -1,0 +1,16 @@
+
+Threads em Java
+
+Toda thread em Java está associada com uma instância da
+class Thread.
+Há duas estratégias para uso de threads em Java:
+Diretamente controlar a criação e o gerenciamento, isto é,
+realizar a instanciação e chamada sempre que for necessário.
+Delegar as tarefas da aplicação para um executor.
+
+
+interface Runnable x subclasse Thread
+
+I Runnable possibilita estender outras classes.
+I Runnable é mais comum como entrada para métodos.
+I Subclasse Thread é mais simples de usar.
