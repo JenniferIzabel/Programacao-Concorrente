@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Topico3_slide_06;
+package Topico3.slide_06;
 
+import com.sun.tools.jdeprscan.scan.Scan;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -12,17 +13,14 @@ import java.util.logging.Logger;
 /**
  *
  * @author Jennifer
- * 
- * 3.  Implemente o exemplo de código que gera a condição de
- * disputa e tente gerar um teste para que ocorra um problema
- * de segurança (safety).
+ *
+ * 2. Faça um programa que receba um valor indicando um número de threads a
+ * serem instanciadas e teste os dois modos de criar threads em Java. dica: use
+ * o Thread.sleep para pausar as threads por um intervalo de tempo.
  */
-public class a3_ThreadSafety implements Runnable{
-    
-    static Contador cont = new Contador();
-    
-     public static void main(String[] args) {
-         System.out.println("cont: "+a3_ThreadSafety.cont.getContador());
+public class a2_NThreads implements Runnable {
+
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);  // Create a Scanner object
         
         System.out.println("Digite a quantidade de Threads a serem criadas:");
@@ -36,17 +34,14 @@ public class a3_ThreadSafety implements Runnable{
         
     }
 
+
     private static void criadora() {
-        new Thread (new a3_ThreadSafety()).start();
-    }   
-
-     @Override
-    public void run() {
-        this.cont.incrementaContador();
-        System.out.println("Count "+ this.cont.getContador());   
+        new Thread (new a2_NThreads()).start(); ;
     }
-}
-    
-    
-    
 
+    @Override
+    public void run() {
+        System.out.println("Print dentro da thread");   
+    }
+
+}

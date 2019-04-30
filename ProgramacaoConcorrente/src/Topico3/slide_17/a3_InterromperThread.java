@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Topico3_slide_17;
+package Topico3.slide_17;
 
-import Topico3_slide_06.a3_ThreadSafety;
+import Topico3.slide_06.a3_ThreadSafety;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;

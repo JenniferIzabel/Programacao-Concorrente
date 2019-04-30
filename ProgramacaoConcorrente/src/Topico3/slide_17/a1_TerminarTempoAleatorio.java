@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Topico3_slide_17;
+package Topico3.slide_17;
 
 import java.util.Random;
 import java.util.logging.Level;

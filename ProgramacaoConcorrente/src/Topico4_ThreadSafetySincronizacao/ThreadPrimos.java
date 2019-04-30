@@ -4,7 +4,7 @@
  * contabiliza os números primos deve possuir como entrada:
  * valor inicial e final do intervalo, números de threads
  */
-package Topico4;
+package Topico4_ThreadSafetySincronizacao;
 
 import java.util.List;
 
