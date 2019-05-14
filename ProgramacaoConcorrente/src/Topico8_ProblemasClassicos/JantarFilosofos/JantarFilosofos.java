@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Topico3.slide_28;
+package Topico8_ProblemasClassicos.JantarFilosofos;
 
 /**
  *
  * @author jennifer
- * 
- * 
- * Faça um programa em Java que consulte periodicamente o
- * estado de um conjunto de threads.
  */
-public class a1_ConsultarEstados {
+public class JantarFilosofos {
     
 }

@@ -28,7 +28,7 @@ public class a2_ExibeFrases implements Runnable {
     public void run() {
         try {
 
-            BufferedReader br = new BufferedReader(new FileReader("/home/jennifer/Documents/UTFPR/2019-1/Programação Concorrente/Programacao-Concorrente/ProgramacaoConcorrente/src/Topico3_slide_17/texto.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("/home/jennifer/Documents/UTFPR/2019-1/Programação Concorrente/Programacao-Concorrente/ProgramacaoConcorrente/src/Topico3_Thread/slide_17/texto.txt"));
             String strLine;
             
             while ((strLine = br.readLine()) != null) {//Read File Line By Line
