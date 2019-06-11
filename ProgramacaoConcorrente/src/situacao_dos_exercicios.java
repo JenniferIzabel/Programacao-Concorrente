@@ -53,4 +53,12 @@ Topico 8
         - v3
     - FumantesCigarro
 
+Topico 9
+
+
+Topico 10
+    - Fatorial = OK
+        - Fatorial Runnable Task = ok
+        - Fatorial Callable Task = ok
+
  */
