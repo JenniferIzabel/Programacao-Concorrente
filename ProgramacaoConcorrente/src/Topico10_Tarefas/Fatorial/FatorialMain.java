@@ -23,18 +23,20 @@ public class FatorialMain {
         int n = 5;
 
         if (x) {
+            //runnable
+            FatorialRunnableTask frt = new FatorialRunnableTask(n);
+            Thread t = new Thread(frt);
+            t.start();
+            
             try {
-                //runnable
-                FatorialRunnableTask frt = new FatorialRunnableTask(n);
-                Thread t = new Thread(frt);
-                t.start();
                 t.join();
                 System.out.println("Runnable result of " + n + "!: " + frt.getResultado());
             } catch (InterruptedException ex) {
                 Logger.getLogger(FatorialMain.class.getName()).log(Level.SEVERE, null, ex);
             }
 
-        } else { //calleble
+        } else { 
+            //callable
             ExecutorService executorService = Executors.newSingleThreadExecutor();
             FatorialCallableTask fct = new FatorialCallableTask(n);
             Future<Integer> future = executorService.submit(fct);
