@@ -61,4 +61,12 @@ Topico 10
         - Fatorial Runnable Task = ok
         - Fatorial Callable Task = ok
 
+Topico 11
+    - ex1 = ok
+    - ex2 = ok
+    - ex3 
+    - ex4
+    - ex5
+    - ex6   
+
  */
