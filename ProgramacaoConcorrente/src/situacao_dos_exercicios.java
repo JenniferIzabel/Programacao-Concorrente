@@ -60,13 +60,16 @@ Topico 10
     - Fatorial = OK
         - Fatorial Runnable Task = ok
         - Fatorial Callable Task = ok
+    - Executor
+        - ex1 = ok
+        - ex2 = ok
+        - ex3 
+        - ex4
+        - ex5
+        - ex6   
 
 Topico 11
-    - ex1 = ok
-    - ex2 = ok
-    - ex3 
-    - ex4
-    - ex5
-    - ex6   
-
+    - BlockingQueue = OK
+    - Cartas 
+    - ConcurrentMap
  */

@@ -4,7 +4,7 @@ programa em tarefas que localizam o maior valor em um segmento do
 vetor. O programa deve possibilitar especificar o n´umero de tarefas e o
 n´umero de threads para resolver o problema.
  */
-package Topico11_Executor.Ex1;
+package Topico10_Executor.Ex1;
 
 import java.util.ArrayList;
 import java.util.List;

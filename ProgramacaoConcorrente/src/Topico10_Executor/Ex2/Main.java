@@ -3,7 +3,7 @@
 MxN. Divida o programa em tarefas que somam as linhas. O programa
 deve possibilitar especificar o n´umero de threads para resolver o problema.
  */
-package Topico11_Executor.Ex2;
+package Topico10_Executor.Ex2;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;

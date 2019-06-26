@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Topico11_Executor.Ex1;
+package Topico10_Executor.Ex1;
 
 import java.util.concurrent.Callable;
 
