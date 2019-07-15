@@ -1,0 +1,52 @@
+list = {}
+tam = 0
+
+function receive (wt, pos)
+    coroutine.resume(wt)
+    return list[pos]
+  end
+  
+  function send (x)
+    coroutine.yield(x) --cede
+    os.execute("sleep " .. tonumber(1))
+  end
+  
+  function writer ()
+    return coroutine.create(
+        function ()
+            local i = 0
+            while true do
+                i = i + 1
+                tam = i
+                table.insert(list, i)
+                print("escreveu", i)
+                coroutine.yield(x) -- cede
+                
+            end
+        end)
+  end
+  
+  function filter (wt)
+    return coroutine.create(function ()
+        while true do
+            local x = receive(wt)   -- get new value
+            send(x)      -- send it 
+      end
+    end)
+  end
+  
+function reader (wt)
+    local pos = 1
+    while true do
+      local x = receive(wt, pos)   -- get new value
+      print("leu", x)
+      pos = pos + 1
+      print(table.concat(list,", "))
+      print("----")
+      --os.execute("sleep " .. tonumber(1))
+    end
+end
+
+  w = writer()
+  f = filter(w)
+  reader(f)
