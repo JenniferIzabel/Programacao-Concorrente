@@ -1,4 +1,4 @@
-require 'Class'
+require 'class'
 require 'ThreadSafeQueue'
 require 'Mutex'
 

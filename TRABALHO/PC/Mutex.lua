@@ -32,7 +32,6 @@ local Mutex = class {
     end
 }
 
-
 Account = class(function(acc,balance)
     acc.balance = balance
  end)
