@@ -1,3 +1,5 @@
+require 'class'
+
 local Mutex = class {
     identities = {},
     new = function(cls, identity)
@@ -29,3 +31,15 @@ local Mutex = class {
         self.server = nil
     end
 }
+
+Account = class(function(acc,balance)
+    acc.balance = balance
+ end)
+
+function Account:withdraw(amount)
+self.balance = self.balance - amount
+end
+
+-- can create an Account using call notation!
+acc = Account(1000)
+acc:withdraw(100)
