@@ -6,6 +6,10 @@ Introduzir assimetria: obrigar um filosofo a pegar em diferente ordem.
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 
+/**
+ *
+ * @author jennifer
+ */
 public class Versao1 implements Garfo {
 
     int n = 0;

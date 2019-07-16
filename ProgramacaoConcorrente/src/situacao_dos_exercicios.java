@@ -72,9 +72,9 @@ Topico 10
         - ex6   
 
 Topico 11
-    - BlockingQueue = OK
+    - BlockingQueue = ok
     - Cartas 
-    - ConcurrentMap **
+    - ConcurrentMap = ok.....
  */
 
 

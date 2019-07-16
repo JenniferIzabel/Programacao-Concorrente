@@ -4,8 +4,10 @@ package Topico8_ProblemasClassicos.JantarFilosofos;
 /*
 Pegar ambos garfos: atomicamente garantir que um filosofo
 pega os dois garfos simultaneamente.
-*/
 
+ *
+ * @author jennifer
+ */
 
 import java.util.concurrent.Semaphore;
 
@@ -26,8 +28,8 @@ public class Versao2 implements Garfo {
     public void pegarGarfo(int i) throws InterruptedException {
         try {
 
-            if(!fork[i].tryAcquire()) {             // se nao conseguir pegar o garfo
-                throw new InterruptedException();   // lança uma exceçao
+            if(!fork[i].tryAcquire()) {             
+                throw new InterruptedException();   
             }
 
             if(!fork[(i + 1) % n].tryAcquire()) {
@@ -35,7 +37,6 @@ public class Versao2 implements Garfo {
             }
 
         } catch (InterruptedException ex) {
-            // libera os dois, caso tenha pegado algum
             fork[i].release();
             fork[(i+1)%n].release();
             throw new InterruptedException();
@@ -43,7 +44,7 @@ public class Versao2 implements Garfo {
     }
 
     @Override
-    public void soltarGarfo(int i) throws InterruptedException {   // apenas solta os dois garfos
+    public void soltarGarfo(int i) throws InterruptedException {   
         fork[i].release();
         fork[(i + 1) % n].release();
     }

@@ -4,8 +4,9 @@ package Topico8_ProblemasClassicos.JantarFilosofos;
 /*
 Temporizacao para pegar qualquer garfo: no maximo numero
 de filosofos - 1 devem esperar um tempo.
-*/
-
+ *
+ * @author jennifer
+ */
 import java.util.concurrent.Semaphore;
 
 public class Versao3 implements Garfo {
@@ -25,7 +26,7 @@ public class Versao3 implements Garfo {
     public void pegarGarfo(int i) throws InterruptedException {
         try {
 
-            while(!fork[i].tryAcquire()) { // espera um tempo se nao conseguir pegar o garfo
+            while(!fork[i].tryAcquire()) { 
                 Thread.sleep(5000);
             }
 
@@ -34,7 +35,6 @@ public class Versao3 implements Garfo {
             }
 
         } catch (InterruptedException ex) {
-            // libera os dois, caso tenha pegado algum
             fork[i].release();
             fork[(i+1)%n].release();
             throw new InterruptedException();
@@ -48,9 +48,9 @@ public class Versao3 implements Garfo {
     }
 
     public static void main(String[] args) {
-        Versao3 philosopher = new Versao3(5);
+        Versao3 filosofo = new Versao3(5);
         for (int i = 0; i < 5; i++) {
-            new Thread(new JantarFilosofos(i, philosopher, 3)).start();
+            new Thread(new JantarFilosofos(i, filosofo, 3)).start();
         }
     }
 }

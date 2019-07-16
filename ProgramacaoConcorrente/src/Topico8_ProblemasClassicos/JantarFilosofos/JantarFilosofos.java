@@ -1,5 +1,9 @@
 package Topico8_ProblemasClassicos.JantarFilosofos;
 
+/**
+ *
+ * @author jennifer
+ */
 public class JantarFilosofos implements Runnable {
 
     int id = 0;

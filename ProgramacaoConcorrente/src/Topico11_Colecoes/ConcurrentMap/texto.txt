@@ -1,8 +1,9 @@
-ConcurrentMap
+aaaaaaaaaaaaaaaa
+bbb
+cjashcsn
+cjaskjclskkcçlsacka]
 
-A interface para estruturas de mapa que provê thread safety e garantias de atomicidade.
-A class ConcurrentHashMap implementa essa interface.
+c,lcslc,slçc,
 
-Documentação: 
-https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html.
-https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
+,cdcldkocdifeufeuhfkjsvn
+vcndjscnsjdchdu
