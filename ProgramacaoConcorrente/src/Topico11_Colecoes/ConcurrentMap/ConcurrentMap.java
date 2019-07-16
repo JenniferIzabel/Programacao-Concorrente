@@ -14,17 +14,22 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author jennifer
  */
 public class ConcurrentMap {
-    public static void main(String[] args) throws FileNotFoundException {
-        
-        File file = new File("/home/jennifer/Documents/UTFPR/2019-1/Programação Concorrente/Programacao-Concorrente/ProgramacaoConcorrente/src/Topico11_Colecoes/ConcurrentMap/texto.txt"); 
-        Scanner sc = new Scanner(file); 
-  
-        // we just need to use \\Z as delimiter 
-        sc.useDelimiter("\\Z"); 
 
-       // System.out.println(sc.next());
+    public static void main(String[] args) throws FileNotFoundException {
+
+        File file = new File("/home/jennifer/Documents/UTFPR/2019-1/Programação Concorrente/Programacao-Concorrente/ProgramacaoConcorrente/src/Topico11_Colecoes/ConcurrentMap/texto.txt");
+        Scanner sc = new Scanner(file);
+
+        // we just need to use \\Z as delimiter 
+        //(pra pegar cada caracter do arquivo)
+        sc.useDelimiter("\\Z");
+        String c;
         
-        
+        do {
+            c = sc.next();
+
+        } while (!sc.equals("EOF"));
+
         ConcurrentHashMap concurrentMap = new ConcurrentHashMap();
 
         concurrentMap.put("key", "value");
