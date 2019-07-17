@@ -74,7 +74,7 @@ Topico 10
 Topico 11
     - BlockingQueue = ok
     - Cartas 
-    - ConcurrentMap = ok.....
+    - ConcurrentMap = ok                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
  */
 
 
