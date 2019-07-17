@@ -54,7 +54,7 @@ Topico 8
     - FumantesCigarro
 
 Topico 9 
-    - Lock **
+    - Lock - ok
     - SharedFifoQueue
     - ArrayListThreadSafe
 
